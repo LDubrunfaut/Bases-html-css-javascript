@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title> Test de personnalité féline </title>
+        <link rel="stylesheet" type="text/css" href="forme.css">
+        <link href="./image/icone.jpg" rel="icon" type="image/png" />
+        <script type="text/javascript" src="projet.js"> </script>
+
+    </head>
+
+    <body class="accueil" >
+
+    <header> Quel chat es-tu ? </header>
+        <!-- Bandeau de navigation en haut de la page -->
+        <nav> 
+            <a href="./accueil.html"> Home </a> |
+            <a href="./article.html"> Articles </a> |
+            <a href="./formulaire.html"> Tests </a> |
+            <a href="./carto.html"> Cartographie du corps </a> |
+            <a href="./vip.html"> VIP </a> |
+            <a href="./cv.html"> Qui sommes nous? </a>
+        </nav>
+
+        <!-- Block des nouveautés sur la gauche -->
+        <div id="news" class="colo_fond pos_news">
+            <h3> Nouveautés : </h3>
+            <ul>
+                <li> <a href="./formulaire.html"> Nouveau test tendance </a> </li>
+                <li> <a href="./carto.html"> Apprend à connaître ton corps </a> </li>
+                <li> <a href="./cv.html"> Apprend à nous connaître </a> </li>
+            </ul>
+        </div>     
+
+        <!-- Formulaire donnant l'age convertis et demandant d'autres informations -->
+        <form name="formulaire">
+            <div class="colo_fond pos_form pos1">
+            <table class="tab" >
+              <tr> 
+                <td>
+                  <p> Votre âge : </p>
+                  <input type="text" name="valeurA" value="à modifier" size="10" /> ans
+                </td>
+                <td rowspan="2">
+                  <input type="button" value="Convertir" onclick="convert()" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p> Voici l'équivalent de votre âge pour un chat: </p>
+                  <input type="text" name="valeurB" value="" size="10" readonly="readonly" /> années
+                  <input type="text" name="valeurC" value="" size="10" readonly="readonly" /> mois
+                </td>
+              </tr>
+            </table>
+            </div>
+            <div class="colo_fond pos_form">
+                <p> <br />Votre chat célèbre favoris : </p>
+                <select name="starcat"> 
+                  <option value="Nyan Cat">                       Nyan cat                  </option>
+                  <option value="Grumpy Cat">                     Grumpy Cat                </option>
+                  <option value="Garfield">                       Garfield                  </option>
+                  <option value="Chat potté" selected>            Le Chat potté             </option>
+                  <option value="Chat du Cheshire">               Chat du Cheshire          </option>
+                  <option>                                        Aucun de ceux proposés    </option>
+                </select>
+                <br />
+
+                <p> <br /> Quelle onomatopée de cette liste ne fait pas référence au miaulement du chat ?</p>
+                <select multiple="multiple" size="3" name="miaulement">
+                  <option value="Miaou">    Miaou   </option>
+                  <option value="Meow">     Meow    </option>
+                  <option value="Miaow">    Miaow   </option>
+                  <option value="Mjau">     Mjau    </option>
+                  <option value="Miouw">    Miouw   </option>
+                  <option value="Miyav">    Miyav   </option>
+                  <option value="Nyan">     Nyan    </option>
+                </select> 
+                <br />
+
+                <p> <br /> Avez-vous un chat ? Si oui de quelle couleur est son pelage ?</p> 
+                <input type="radio" checked="checked" value="No" name="cat1" /> Non 
+                <input type="radio" value="Yes" name="cat1" /> Oui, son pelage est : 
+                <input maxlength="20" size="20" name="cat2" />
+                <br />
+
+               <p> <br /> Quelles sont selon vous les 3 activités félines les plus importantes de cette liste ?</p> 
+                <br /> <br />
+                <input type="checkbox" name="connais" value="Dormir" />                         Dormir
+                <input type="checkbox" name="connais" value="Chasser" />                        Chasser
+                <input type="checkbox" name="connais" value="Jouer avec mon maître" />          Jouer avec mon maître
+                <input type="checkbox" name="connais" value="Avoir des caresses" />             Avoir des caresses
+                <input type="checkbox" name="connais" value="Dominer le monde" />               Dominer le monde
+                <input type="checkbox" name="connais" value="Manger" />                         Manger
+                <br />
+                <br /> <br /> <br />
+            </div>
+            <br />
+            <div class="colo_fond pos_form">
+            <br />
+            <input type="button" value="Envoyez vos réponses" onclick="resume()" /> 
+            <input type="reset" value="Effacez vos réponses" />
+            <br /> <br />
+            </div>
+        </form>
+
+        <!-- Footer -->
+        <footer> Copyright 2016 | <a href="mailto:ndebi.melissa@gmail.com"> Contact N'Debi </a> | <a href="mailto:lucie.dubrunfaut@gmail.com"> Contact Dubrunfaut </a> | <a href="./source.html"> Sources </a> </footer>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title> Accès au coin VIP </title>
+        <link rel="stylesheet" type="text/css" href="forme.css">
+        <link href="./image/icone.jpg" rel="icon" type="image/png" />
+        <script type="text/javascript" src="projet.js"> </script>
+
+    </head>
+    <body class="accueil" >
+        <header> Portail pour la section VIP </header>
+
+        <!-- Bandeau de navigation en haut de la page -->
+        <nav> 
+            <a href="./accueil.html"> Home </a> |
+            <a href="./article.html"> Articles </a> |
+            <a href="./formulaire.html"> Tests </a> |
+            <a href="./carto.html"> Cartographie du corps </a> |
+            <a href="./vip.html"> VIP </a> |
+            <a href="./cv.html"> Qui sommes nous? </a>
+        </nav>
+
+        <!-- Demande de mot de passe pour entrer dans la page VIP -->
+        <form name="vip">
+            <div class="colo_fond" id="dim_vip">
+              <h3> Tu souhaites accéder au coin VIP ? Entre ton mot de passe : </h3>
+              <p> La formule magique : </p>
+              <input type="password" name="mdp" value="" size="10" />
+              <br /> <br /> <br />  
+              <input type="button" value="Ouvrir la porte magique" onclick="ouverture()" />
+              <br /> <br /> <br />  
+            </div>
+        </form>
+
+        <!-- Footer -->
+        <footer> Copyright 2016 | <a href="mailto:ndebi.melissa@gmail.com"> Contact N'Debi </a> | <a href="mailto:lucie.dubrunfaut@gmail.com"> Contact Dubrunfaut </a> | <a href="./source.html"> Sources </a> </footer>
+    </body>
+</html>
